@@ -32,6 +32,11 @@ export default {
   watch: {
     active(newState, oldState) {
       if (!oldState && newState) { this.main() }
+      console.info({ active: this.active, speed: this.speed })
+    },
+
+    speed() {
+      console.info({ active: this.active, speed: this.speed })
     },
   },
 
